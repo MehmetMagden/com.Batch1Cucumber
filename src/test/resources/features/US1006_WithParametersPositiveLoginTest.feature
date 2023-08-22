@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1006 User should be able to login with valid data
 
   Scenario: TC12 With valid username and password User should be able to login

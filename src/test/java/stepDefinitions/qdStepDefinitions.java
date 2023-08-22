@@ -39,4 +39,39 @@ public class qdStepDefinitions {
 
         Assert.assertTrue(qdPage.qdAfterLoginMyCourseLink.isDisplayed());
     }
+
+    @Then("Test that user could not be login")
+    public void testThatUserCouldNotBeLogin() {
+        qdPage = new QdPage();
+        Assert.assertTrue(qdPage.qdLoginPageMailTextBox.isDisplayed());
+
+
+    }
+
+    @And("User will wait for {int} sec")
+    public void userWillWaitForSec(int sec) {
+
+        try {
+            Thread.sleep(sec*1000);
+        } catch (InterruptedException e) {
+
+        }
+
+    }
+
+    @And("User will manually enter an {string} to email box")
+    public void userWillManuallyEnterAnToEmailBox(String emailValue) {
+
+        qdPage = new QdPage();
+        qdPage.qdLoginPageMailTextBox.sendKeys(emailValue);
+
+    }
+
+    @And("User will manually enter a {string} to password box")
+    public void userWillManuallyEnterAToPasswordBox(String passwordValue) {
+
+        qdPage = new QdPage();
+
+        qdPage.qdLoginPagepasswordTextBox.sendKeys(passwordValue);
+    }
 }

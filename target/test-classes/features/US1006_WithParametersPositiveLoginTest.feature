@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1006 User should be able to login with valid data
 
   Scenario: TC12 With valid username and password User should be able to login
@@ -9,3 +9,4 @@ Feature: US1006 User should be able to login with valid data
     And User will enter a "qdValidPassword" to password box
     And User will click on loginPage LoginButton
     Then Test that User can see MyCourse link
+    And User closes the page
