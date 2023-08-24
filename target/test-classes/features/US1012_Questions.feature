@@ -1,5 +1,5 @@
 Feature: US1012 Window Test
-  @wip
+   @smoke @p4
   Scenario:  TC20 User should be able to test new tab
 
     Given User goes "webUrl" webpage

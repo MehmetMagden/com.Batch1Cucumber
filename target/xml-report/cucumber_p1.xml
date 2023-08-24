@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="169.479" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Searches for multi products in amazon  webpage" name="TC02 User should be able to search for products in amazon" time="81.855">
+<system-out><![CDATA[
+Given User goes amazon webpage..............................................passed
+And User searches for Nutella...............................................passed
+Then Test that resultText has Nutella in it.................................passed
+Then User closes the page...................................................passed
+And User searches for Samsung...............................................passed
+And Test that resultText has Samsung in it..................................passed
+And User closes the page....................................................passed
+And User searches for Apple.................................................passed
+And Test that resultText has Apple in it....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 User searches for the product which is entered as an parameter" name="TC03 User searches for Nutella with parameter" time="27.049">
+<system-out><![CDATA[
+Given User goes amazon webpage..............................................passed
+Then User searches for "Nutella"............................................passed
+And Test that resultText has "Nutella" in it................................passed
+Then User closes the page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 User searches for the product which is entered as an parameter" name="TC05 User searches for Cucumber with parameter" time="15.116">
+<system-out><![CDATA[
+Given User goes amazon webpage..............................................passed
+And User searches for "Cucumber"............................................passed
+Then Test that resultText has "Cucumber" in it..............................passed
+Then User closes the page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 User should be able to login with valid data" name="TC12 With valid username and password User should be able to login" time="17.456">
+<system-out><![CDATA[
+Given User goes "qdUrl" webpage.............................................passed
+When User clicks on homepage LoginButton....................................passed
+And User will enter an "qdValidEmail" to email box..........................passed
+And User will enter a "qdValidPassword" to password box.....................passed
+And User will click on loginPage LoginButton................................passed
+Then Test that User can see MyCourse link...................................passed
+And User closes the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1011 User tests buttons" name="TC19 User tests buttons by waiting" time="27.04">
+<system-out><![CDATA[
+Given User goes "heroUrl" webpage...........................................passed
+When Click the Add Element button...........................................passed
+And Wait until the Delete button is visible.................................passed
+Then Test that the Delete button is visible.................................passed
+And Delete the button by pressing the Delete button.........................passed
+Then Test that the delete button is not visible.............................passed
+And User closes the page....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

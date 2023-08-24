@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="101.902" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="User uses parameters in Configurations.Properties file" name="TC09 User should be able to visit Amazon" time="26.356">
+<system-out><![CDATA[
+Given User goes "amazonUrl" webpage.........................................passed
+Then Test that url has "amazon" in it.......................................passed
+Then User closes the page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User uses parameters in Configurations.Properties file" name="TC11 User should be able to visit walmart page" time="26.279">
+<system-out><![CDATA[
+Given User goes "walmartUrl" webpage........................................passed
+Then Test that url has "walmart" in it......................................passed
+Then User closes the page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should not be able to login with invalid username or password" name="TC15 Negative login Test with invalid userName and invalid password" time="29.252">
+<system-out><![CDATA[
+Given User goes "qdUrl" webpage.............................................passed
+When User clicks on homepage LoginButton....................................passed
+And User will enter an "qdInValidEmail" to email box........................passed
+And User will enter a "qdInValidPassword" to password box...................passed
+And User will click on loginPage LoginButton................................passed
+Then Test that user could not be login......................................passed
+And User will wait for 3 sec................................................passed
+And User closes the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Window Test" name="TC20 User should be able to test new tab" time="18.986">
+<system-out><![CDATA[
+Given User goes "webUrl" webpage............................................passed
+Then Scroll down to Login Portal............................................passed
+And Click Login Portal......................................................passed
+And Switch to other window..................................................passed
+And Write values in the "username" and "password" boxes.....................passed
+And Press the login button..................................................passed
+Then Test that the popup text is "validation failed"........................passed
+And Close the Popup by saying Ok............................................passed
+And Go back to the first page...............................................passed
+Then Test that the first page is returned...................................passed
+And User closes all pages...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,7 +1,7 @@
 
-
+@p3
 Feature: US1008 Testing amazon search with a lot of different values
-
+  @smoke
   Scenario Outline: TC16 Amazon search Test
 
     Given User goes "amazonUrl" webpage

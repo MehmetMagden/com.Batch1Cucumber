@@ -13,7 +13,7 @@ Feature: User should not be able to login with invalid username or password
     And User will wait for 3 sec
     And User closes the page
 
-
+  @p2
   Scenario: TC14 Negative login Test with invvalid userName and valid password
 
     Given User goes "qdUrl" webpage
@@ -25,7 +25,7 @@ Feature: User should not be able to login with invalid username or password
     And User will wait for 3 sec
     And User closes the page
 
-
+  @p4
   Scenario: TC15 Negative login Test with invalid userName and invalid password
 
     Given User goes "qdUrl" webpage

@@ -1,5 +1,5 @@
 Feature: US1010 Different information Test
-
+  @p2
   Scenario Outline: TC18 Entering different values to different text boxes
 
     Given User goes "editorUrl" webpage

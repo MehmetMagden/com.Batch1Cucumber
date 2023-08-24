@@ -1,6 +1,6 @@
 
 Feature: Searches for multi products in amazon  webpage
-
+  @p1
   Scenario: TC02 User should be able to search for products in amazon
 
     Given User goes amazon webpage

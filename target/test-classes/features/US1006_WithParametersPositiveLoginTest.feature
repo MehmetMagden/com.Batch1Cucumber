@@ -1,6 +1,6 @@
 
 Feature: US1006 User should be able to login with valid data
-
+  @p1
   Scenario: TC12 With valid username and password User should be able to login
 
     Given User goes "qdUrl" webpage

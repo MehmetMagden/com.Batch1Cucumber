@@ -1,5 +1,5 @@
 Feature: US1011 User tests buttons
-
+  @smoke @p1
   Scenario: TC19 User tests buttons by waiting
 
   Given User goes "heroUrl" webpage
