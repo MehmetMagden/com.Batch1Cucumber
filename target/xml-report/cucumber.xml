@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="41.884" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="User Should be able to register" name="User should be able to enter personal information and register" time="41.492">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[text()='Account Created!']&quot;}
+<testsuite name="Cucumber" time="10.273" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Wait test" name="User should wait for 5 sec to see the button" time="9.924">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#visibleAfter&quot;}
   (Session info: chrome=115.0.5790.173)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c21f0ec39c46aecfd39f86a506d0acd, findElement {using=xpath, value=//b[text()='Account Created!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50632}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50632/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c21f0ec39c46aecfd39f86a506d0acd">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Account Created!']"}
+Command: [a8b0be9002ccd51cbc116ef6ed487d03, findElement {using=id, value=visibleAfter}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8b0be9002ccd51cbc116ef6ed487d03">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#visibleAfter"}
   (Session info: chrome=115.0.5790.173)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c21f0ec39c46aecfd39f86a506d0acd, findElement {using=xpath, value=//b[text()='Account Created!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50632}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50632/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c21f0ec39c46aecfd39f86a506d0acd
+Command: [a8b0be9002ccd51cbc116ef6ed487d03, findElement {using=id, value=visibleAfter}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8b0be9002ccd51cbc116ef6ed487d03
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -31,24 +31,19 @@ Session ID: 3c21f0ec39c46aecfd39f86a506d0acd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
-	at stepDefinitions.AutoStepDefinitions.verify_account_creation(AutoStepDefinitions.java:94)
-	at ✽.verify account creation(file:///C:/Users/Maden/IdeaProjects/com.Batch1Cucumber/src/test/resources/features/US1013_Questions.feature:11)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at stepDefinitions.DemoStepDefinitions.testThatTheButtonWillBeVisibleAfterSec(DemoStepDefinitions.java:49)
+	at ✽.Test that the button will be visible after 6 sec(file:///C:/Users/Maden/IdeaProjects/com.Batch1Cucumber/src/test/resources/features/US1018_Questions.feature:7)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given User goes "autoUrl" webpage...........................................passed
-And clicks the user sign in link............................................passed
-And user enters email address in Create and account section.................passed
-And clicks the Create an Account button.....................................passed
-And user enters personal and contact information............................passed
-And the user clicks the Register button.....................................passed
-Then verify account creation................................................failed
+Given User goes "demoWaitUrl" webpage.......................................passed
+Then Test that the button will be visible after 6 sec.......................failed
 ]]></system-out>
 </testcase>
 </testsuite>

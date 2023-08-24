@@ -94,4 +94,27 @@ public class AutoStepDefinitions {
         Assert.assertTrue(autoPage.registerSuccessMessage.isDisplayed());
 
     }
+
+
+    @Given("writes the email address without the @ sign in the email box and clicks enter")
+    public void writes_the_email_address_without_the_sign_in_the_email_box_and_clicks_enter() {
+
+        autoPage = new AutoPage();
+        autoPage.loginPageNewUserNameBox.sendKeys("Michael");
+        autoPage.loginPageNewUserEmailBox.sendKeys("cvbncvbncvbn.com");
+
+        autoPage.loginPageNewUserSignupButton.click();
+
+
+
+    }
+
+    @Then("verify that user can not register")
+    public void verifyThatUserCanNotRegister() {
+        autoPage = new AutoPage();
+
+        Assert.assertTrue(autoPage.loginPageNewUserNameBox.isDisplayed());
+
+
+    }
 }

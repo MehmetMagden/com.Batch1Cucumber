@@ -103,4 +103,24 @@ public class AmazonStepDefinitions {
     }
 
 
+    @Then("Test that the products at first page has Nutella Hazelnut")
+    public void testThatTheProductsAtFirstPageHasNutellaHazelnut() {
+        amazonPage = new AmazonPage();
+        boolean flag = false;
+
+
+        for (int i = 0; i < amazonPage.searchedProductsList.size(); i++) {
+
+            if (amazonPage.searchedProductsList.get(i).getText().contains("Nutella Hazelnut")){
+
+                flag=true;
+                break;
+            }
+
+        }
+
+        Assert.assertTrue(flag);
+
+
+    }
 }

@@ -1,6 +1,6 @@
 Feature: User Should be able to register
-  @wip
-  Scenario: User should be able to enter personal information and register
+
+  Scenario: TC21 User should be able to enter personal information and register
 
     Given  User goes "autoUrl" webpage
     And clicks the user sign in link
