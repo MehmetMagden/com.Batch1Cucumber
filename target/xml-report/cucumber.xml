@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.273" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Wait test" name="User should wait for 5 sec to see the button" time="9.924">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#visibleAfter&quot;}
-  (Session info: chrome=115.0.5790.173)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a8b0be9002ccd51cbc116ef6ed487d03, findElement {using=id, value=visibleAfter}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a8b0be9002ccd51cbc116ef6ed487d03">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#visibleAfter"}
-  (Session info: chrome=115.0.5790.173)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a8b0be9002ccd51cbc116ef6ed487d03, findElement {using=id, value=visibleAfter}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Maden\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63031/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a8b0be9002ccd51cbc116ef6ed487d03
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
-	at stepDefinitions.DemoStepDefinitions.testThatTheButtonWillBeVisibleAfterSec(DemoStepDefinitions.java:49)
-	at ✽.Test that the button will be visible after 6 sec(file:///C:/Users/Maden/IdeaProjects/com.Batch1Cucumber/src/test/resources/features/US1018_Questions.feature:7)
-]]>
-</failure>
+<testsuite name="Cucumber" time="53.1" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="US_003 As a visitor, I want the functions in the body of the Home page to be visible and active." name="TC01 Search box sould be visible and active" time="29.922">
 <system-out><![CDATA[
-Given User goes "demoWaitUrl" webpage.......................................passed
-Then Test that the button will be visible after 6 sec.......................failed
+Given Visitor goes to the "homePageUrl".....................................passed
+Then Tests that Search box is visible.......................................passed
+Then that Search box is active..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_003 As a visitor, I want the functions in the body of the Home page to be visible and active." name="TC_002 Tests that when an address entered, it takes us the regarding page" time="22.646">
+<system-out><![CDATA[
+Given Visitor goes to the "homePageUrl".....................................passed
+Then Visiters searches "London" in the search box...........................passed
+Then Tests that visiter can see restourant regarding to the address.........passed
 ]]></system-out>
 </testcase>
 </testsuite>

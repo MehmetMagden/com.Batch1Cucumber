@@ -1,5 +1,5 @@
 Feature: Wait test
-  @wip
+
   Scenario: User should wait for 5 sec to see the button
     
     
