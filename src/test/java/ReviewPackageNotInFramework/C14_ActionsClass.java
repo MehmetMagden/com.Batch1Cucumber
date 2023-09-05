@@ -2,7 +2,9 @@ package ReviewPackageNotInFramework;
 
 import io.cucumber.java.en.Then;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.Driver;
 
@@ -27,6 +29,12 @@ mouse on a web element or drag and drop actions )
 
         actions.keyDown(Keys.SHIFT).perform();
 
+
+        Driver.getDriver().get("https://the-internet.herokuapp.com/context_menu");
+
+        WebElement area = Driver.getDriver().findElement(By.id("hot-spot"));
+
+        actions.contextClick(area).perform();
 
     }
 

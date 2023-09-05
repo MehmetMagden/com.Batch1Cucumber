@@ -172,4 +172,31 @@ public class ReusableMethods {
 
         return element;
     }
+
+
+    public static WebElement waitForWebElement(int second, String idOfElement) {
+
+
+        WebElement element = null;
+        try {
+            element = Driver.getDriver().findElement(By.id(idOfElement));
+        } catch (Exception e) {
+
+            if (second>0){
+                ReusableMethods.waitfor(1);
+                waitForWebElement(second-1,idOfElement);
+            }else {
+                throw new RuntimeException("the webelement could not be found");
+            }
+
+
+
+
+        }
+
+
+        return element;
+
+
+    }
 }
